@@ -1,0 +1,762 @@
+711 [main] INFO  com.edu.thread.DeadlockHome -     User0   resource1 = Scanner7   resource2 = Printer6
+719 [main] INFO  com.edu.thread.DeadlockHome -     User1   resource1 = Scanner9   resource2 = Printer10
+719 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Printer6
+720 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Printer6
+721 [main] INFO  com.edu.thread.DeadlockHome -     User2   resource1 = Scanner7   resource2 = Scanner11
+721 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Printer10
+721 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Printer10
+722 [main] INFO  com.edu.thread.DeadlockHome -     User3   resource1 = Scanner9   resource2 = Printer8
+722 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+722 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+725 [main] INFO  com.edu.thread.DeadlockHome -     User4   resource1 = Scanner5   resource2 = Printer6
+725 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+726 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+726 [main] INFO  com.edu.thread.DeadlockHome -     User5   resource1 = Scanner9   resource2 = Printer8
+726 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+726 [main] INFO  com.edu.thread.DeadlockHome -     User6   resource1 = Printer4   resource2 = Printer2
+727 [main] INFO  com.edu.thread.DeadlockHome -     User7   resource1 = Printer6   resource2 = Printer10
+727 [main] INFO  com.edu.thread.DeadlockHome -     User8   resource1 = Scanner3   resource2 = Printer2
+728 [main] INFO  com.edu.thread.DeadlockHome -     User9   resource1 = Scanner3   resource2 = Printer6
+728 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer10
+728 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+729 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+730 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+730 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+731 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+1721 [User0] INFO  com.edu.thread.GeneralResource - I've printed the page number 1
+1721 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Scanner7
+1722 [User1] INFO  com.edu.thread.GeneralResource - I've printed the page number 1
+1722 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Scanner7
+1723 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Scanner7
+1723 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Scanner9
+1723 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 1
+1723 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Printer6
+1723 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+1723 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+1724 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Printer6
+1724 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Scanner9
+1724 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+1724 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Scanner9
+1724 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+1725 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Printer10
+1725 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer10
+1725 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+1725 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+1725 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Printer10
+1726 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+1726 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 1
+1726 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+1726 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+1727 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+1727 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+1728 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+1728 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+1731 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 1
+1731 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+1732 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+1732 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+1733 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+1733 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+1735 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+2724 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 2
+2725 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+2725 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+2725 [User7] INFO  com.edu.thread.GeneralResource - I've printed the page number 2
+2726 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+2726 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer6
+2726 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 2
+2727 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer6
+2727 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+2726 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+2727 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer6
+2727 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+2727 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+2728 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer10
+2728 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+2728 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+2728 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer10
+2728 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Printer10
+2728 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+2729 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 2
+2729 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+2729 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+2729 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+2729 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+2730 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+2730 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+2730 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+2730 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+2734 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 2
+2734 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+2734 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+2735 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+2735 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+2735 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+2735 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+3728 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 3
+3729 [User1] INFO  com.edu.thread.GeneralResource - I've printed the page number 3
+3730 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 3
+3729 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+3730 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Scanner9
+3730 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+3730 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+3731 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+3731 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Scanner9
+3731 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+3732 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Scanner9
+3732 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+3732 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+3732 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Printer10
+3732 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+3733 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Printer10
+3731 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 3
+3732 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+3734 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+3732 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer10
+3734 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+3734 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+3733 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+3735 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+3735 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+3736 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 3
+3736 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+3736 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+3736 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+3737 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+3737 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+3737 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+3738 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+3738 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+3739 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+4733 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 4
+4734 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+4734 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+4735 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+4735 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+4736 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+4736 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+4736 [User7] INFO  com.edu.thread.GeneralResource - I've printed the page number 4
+4737 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 4
+4737 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer6
+4737 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 4
+4738 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+4739 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+4739 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 4
+4739 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+4740 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+4740 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+4740 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+4740 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+4738 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+4741 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+4742 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+4742 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+4742 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+4742 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+4743 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+4743 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+4743 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+4743 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+4744 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+5739 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 5
+5740 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+5741 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+5741 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+5742 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+5742 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+5742 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+5743 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 5
+5744 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 5
+5744 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 5
+5745 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+5746 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+5747 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+5748 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+5749 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+5749 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+5749 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+5750 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+5750 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+5750 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+5751 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+5751 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+5752 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+5752 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+5753 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+5753 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+5754 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+5754 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+6743 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 6
+6744 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+6744 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+6744 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+6745 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+6745 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+6745 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+6752 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 6
+6753 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 6
+6753 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+6754 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+6754 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+6754 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+6754 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+6755 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+6755 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+6755 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 6
+6755 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+6755 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+6755 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+6755 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+6756 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+6756 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+6755 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+6756 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+6757 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+6757 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+6757 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+7746 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 7
+7747 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+7747 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+7747 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+7748 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+7748 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Printer6
+7748 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+7756 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 7
+7756 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 7
+7757 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+7757 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+7757 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 7
+7757 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+7757 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+7758 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+7758 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+7758 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+7758 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+7758 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+7758 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+7759 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+7758 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+7758 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+7759 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+7759 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+7759 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+7760 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+7760 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+8748 [User0] INFO  com.edu.thread.GeneralResource - I've printed the page number 8
+8759 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 8
+8760 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 8
+8783 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Scanner7
+8760 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 8
+8783 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+8783 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+8783 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Scanner7
+8783 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+8784 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+8784 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+8784 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+8783 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+8784 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+8785 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+8784 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+8784 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Scanner7
+8786 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Printer6
+8786 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+8787 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+8787 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+8787 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+8787 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+8788 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+8788 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+8788 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+8788 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+8789 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Printer6
+9786 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 9
+9787 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+9787 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 9
+9787 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+9787 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+9787 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+9787 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+9788 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+9788 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+9788 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+9788 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+9788 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+9789 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+9789 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+9789 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 9
+9789 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 9
+9789 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+9790 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+9790 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+9790 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+9790 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+9790 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+9791 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+9791 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+9791 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+9791 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+9791 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+9791 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+10789 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 10
+10789 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 10
+10789 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+10790 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+10790 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+10790 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+10790 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+10790 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+10790 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+10791 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+10790 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+10791 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+10791 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+10791 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+10791 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 10
+10792 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+10792 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 10
+10792 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+10792 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+10792 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+10792 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+10793 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+10793 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+10794 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+10794 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+10794 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+10795 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+10795 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+11791 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 11
+11792 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 11
+11793 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+11793 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+11793 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+11793 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+11793 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+11794 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+11794 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+11794 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+11794 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+11794 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+11794 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer6
+11795 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer6
+11795 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+11795 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer10
+11795 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+11795 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 11
+11795 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 11
+11795 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Printer10
+11795 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer10
+11796 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+11796 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+11796 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+11796 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+11796 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+11797 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+11797 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+11797 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+11797 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+11797 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+11797 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+11797 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+12795 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 12
+12795 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 12
+12795 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+12796 [User1] INFO  com.edu.thread.GeneralResource - I've printed the page number 5
+12796 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+12796 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+12796 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+12796 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Scanner9
+12796 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+12797 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+12797 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+12797 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Scanner9
+12797 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+12797 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+12797 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Scanner9
+12797 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Printer10
+12797 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer10
+12797 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+12798 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Printer10
+12798 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 12
+12798 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 12
+12797 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+12798 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+12798 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+12799 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+12799 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+12799 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+12799 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+12799 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+12799 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+12799 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+12799 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+12800 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+12800 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+12801 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+13797 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 13
+13797 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+13798 [User7] INFO  com.edu.thread.GeneralResource - I've printed the page number 6
+13798 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+13798 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+13798 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer6
+13798 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+13798 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+13798 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+13798 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 13
+13798 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+13798 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+13798 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+13798 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+13799 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Printer6
+13799 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+13800 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 13
+13800 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+13800 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+13800 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+13800 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+13800 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+13800 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+13801 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 13
+13802 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+13802 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+13802 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+13802 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+13802 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+13802 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+14798 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 14
+14799 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+14799 [User0] INFO  com.edu.thread.GeneralResource - I've printed the page number 14
+14799 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+14799 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Scanner7
+14799 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+14799 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Scanner7
+14800 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+14800 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+14800 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Scanner7
+14800 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+14800 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Printer6
+14800 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+14800 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Printer6
+14800 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 14
+14800 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+14801 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+14801 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+14801 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+14801 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+14801 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+14802 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 14
+14803 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+14803 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+14803 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+14804 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+14804 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+14804 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+15800 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 15
+15800 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 15
+15801 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+15801 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+15801 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+15801 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+15801 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+15801 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+15801 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 15
+15801 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+15801 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+15802 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+15802 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+15802 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+15802 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+15802 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+15802 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+15802 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+15802 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+15802 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+15802 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+15804 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 15
+15804 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+15804 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+15805 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+15805 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+15805 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+15805 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+16802 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 16
+16802 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+16802 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 16
+16802 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+16802 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+16803 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+16803 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+16803 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+16803 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer6
+16803 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+16803 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+16803 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer6
+16803 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+16803 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 16
+16803 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+16803 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+16803 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+16803 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Printer10
+16803 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer10
+16803 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer10
+16803 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+16803 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+16803 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+16803 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+16803 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+16803 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+16805 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 16
+16805 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+16805 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+16805 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+16806 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+16806 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+16806 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+17803 [User1] INFO  com.edu.thread.GeneralResource - I've printed the page number 7
+17803 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 17
+17803 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 17
+17804 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+17804 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+17803 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 17
+17804 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Scanner9
+17805 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+17805 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+17805 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+17805 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+17805 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+17805 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+17805 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+17805 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+17805 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+17805 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+17806 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+17805 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Scanner9
+17806 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 17
+17806 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Scanner9
+17806 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+17806 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Printer10
+17807 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer10
+17806 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+17806 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+17807 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Printer10
+17807 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+17808 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+17808 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+17808 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+17808 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+17808 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+17808 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+17808 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+18806 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 18
+18806 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+18806 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 18
+18806 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+18806 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+18806 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+18807 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+18807 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+18807 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+18807 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+18807 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+18807 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+18807 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+18807 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+18807 [User7] INFO  com.edu.thread.GeneralResource - I've printed the page number 8
+18807 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer6
+18808 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 18
+18808 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+18808 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 18
+18808 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+18808 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+18808 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+18808 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+18808 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+18808 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+18809 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+18808 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+18809 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+18809 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+18809 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+19807 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 19
+19807 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 19
+19808 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+19807 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+19808 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+19808 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+19808 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+19808 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+19808 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+19808 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+19809 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Printer6
+19809 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+19809 [User8] INFO  com.edu.thread.GeneralResource - I've printed the page number 19
+19808 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+19809 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Scanner3
+19809 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 19
+19810 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+19810 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+19811 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+19810 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Scanner3
+19811 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+19811 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Scanner3
+19811 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 released lock on Printer2
+19811 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+19811 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+19811 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+19811 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquiring lock on Printer2
+19811 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+20809 [User0] INFO  com.edu.thread.GeneralResource - I've printed the page number 20
+20809 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Scanner7
+20809 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Scanner7
+20809 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Scanner7
+20809 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Printer6
+20809 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+20809 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Printer6
+20811 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 20
+20811 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+20811 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+20811 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+20811 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+20811 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+20811 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+20811 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 20
+20811 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 20
+20811 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+20811 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+20811 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+20812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+20812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+20812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+20812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+20811 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+20812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+20812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+20812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+20812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+21810 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 21
+21810 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+21810 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+21810 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+21810 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+21810 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer6
+21810 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+21810 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer6
+21810 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 released lock on Printer10
+21810 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer10
+21810 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Printer10
+21810 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Printer6
+21811 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 21
+21812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+21812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+21812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+21812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+21812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+21812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+21812 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 21
+21812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+21812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+21812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+21812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+21812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+21812 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+21812 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 21
+21812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+21812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+21812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+21812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+21812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+21812 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+22810 [User4] INFO  com.edu.thread.GeneralResource - I've printed the page number 22
+22810 [User1] INFO  com.edu.thread.GeneralResource - I've printed the page number 9
+22811 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Scanner9
+22811 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Scanner5
+22811 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquired lock on  Scanner9
+22811 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquired lock on  Scanner5
+22811 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Scanner9
+22811 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Scanner5
+22812 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 released lock on Printer10
+22812 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquired lock on  Printer10
+22812 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 released lock on Printer6
+22812 [User1] INFO  com.edu.thread.MyRunnableFirst -             User1 acquiring lock on Printer10
+22812 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+22812 [User4] INFO  com.edu.thread.MyRunnableFirst -             User4 acquiring lock on Printer6
+22812 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 22
+22812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+22812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+22812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+22812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+22812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+22812 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 22
+22812 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+22813 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+22813 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 22
+22813 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+22813 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+22813 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+22813 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+22813 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+22813 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+22813 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+22814 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+22814 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+22814 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+22814 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+23812 [User7] INFO  com.edu.thread.GeneralResource - I've printed the page number 10
+23812 [User9] INFO  com.edu.thread.GeneralResource - I've printed the page number 23
+23812 [User7] INFO  com.edu.thread.MyRunnableFirst -             User7 acquiring lock on Printer6
+23812 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Scanner3
+23813 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Scanner3
+23813 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Scanner3
+23813 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 released lock on Printer6
+23813 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Printer6
+23813 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquiring lock on Printer6
+23813 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 23
+23813 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+23813 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+23813 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+23813 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+23813 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+23813 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
+23814 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 23
+23814 [User5] INFO  com.edu.thread.GeneralResource - I've printed the page number 23
+23814 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+23814 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Scanner9
+23814 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+23814 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Scanner9
+23814 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+23814 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Scanner9
+23814 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+23814 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Printer8
+23814 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+23814 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 released lock on Printer8
+23814 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer2
+23814 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquiring lock on Printer8
+24813 [User0] INFO  com.edu.thread.GeneralResource - I've printed the page number 24
+24813 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Scanner7
+24813 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquired lock on  Scanner7
+24813 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Scanner7
+24814 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 released lock on Printer6
+24814 [User9] INFO  com.edu.thread.MyRunnableFirst -             User9 acquired lock on  Printer6
+24814 [User2] INFO  com.edu.thread.GeneralResource - I've printed the page number 24
+24814 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner7
+24814 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner7
+24814 [User0] INFO  com.edu.thread.MyRunnableFirst -             User0 acquiring lock on Printer6
+24815 [User3] INFO  com.edu.thread.GeneralResource - I've printed the page number 24
+24815 [User6] INFO  com.edu.thread.GeneralResource - I've printed the page number 24
+24815 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Scanner9
+24815 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer4
+24815 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquired lock on  Printer4
+24815 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer4
+24816 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 released lock on Printer2
+24816 [User8] INFO  com.edu.thread.MyRunnableFirst -             User8 acquired lock on  Printer2
+24816 [User6] INFO  com.edu.thread.MyRunnableFirst -             User6 acquiring lock on Printer2
+24815 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner7
+24815 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquired lock on  Scanner9
+24817 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 released lock on Scanner11
+24817 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Scanner9
+24817 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquiring lock on Scanner11
+24817 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 released lock on Printer8
+24817 [User5] INFO  com.edu.thread.MyRunnableFirst -             User5 acquired lock on  Printer8
+24817 [User3] INFO  com.edu.thread.MyRunnableFirst -             User3 acquiring lock on Printer8
+24817 [User2] INFO  com.edu.thread.MyRunnableFirst -             User2 acquired lock on  Scanner11
