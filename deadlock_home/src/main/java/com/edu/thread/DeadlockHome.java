@@ -37,22 +37,21 @@ public class DeadlockHome {
     }
     public static List<GeneralResource> getGeneralResources(){
 
-        AtomicInteger i = new AtomicInteger();
         AtomicInteger id = new AtomicInteger(1);
         Supplier <GeneralResource> newGeneralResource = GeneralResource::new;
 
         Function <GeneralResource,GeneralResource> setNameEquipment = (n) -> {
            if (n.getId()%2 == 0 ){
-               n.setName("Printer" + id.getAndIncrement());
+               n.setName("Printer" + id.get());
            }
            else {
-               n.setName("Scanner" + id.getAndIncrement());
+               n.setName("Scanner" + id.get());
            }
            return n;
         };
 
         List<GeneralResource> generalResources = Stream.generate(newGeneralResource)
-                .map(n -> n.setId(i.incrementAndGet()+1))
+                .map(n -> n.setId(id.incrementAndGet()))
                 .map(setNameEquipment)
                 .limit(10)
                 .collect(Collectors.toList());

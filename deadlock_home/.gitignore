@@ -18,7 +18,7 @@
 .DS_Store
 
 # Maven
-log/
+#log/
 target/
 
 # Package Files #
